@@ -1,38 +1,52 @@
-.App {
+/** @format */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap');
+#root,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  box-sizing: border-box;
+  background-image: url('./images/bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.app {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card {
+    background-color: rgba(245, 245, 245, 0.468);
+    width: 40%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    padding: 2%;
+    box-shadow: 10px 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.heading {
+    display: flex;
+    align-items: center;
+    height: 580px;
+    font-family: 'League Spartan', sans-serif;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.button {
+    padding: 15px 10px;
+    border-radius: 10px;
+    background-color: #8ec5fc7f;
+    color: #000;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-family: 'League Spartan', sans-serif;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button:hover {
+  background-color: #8ec5fc;
 }
